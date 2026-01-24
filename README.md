@@ -10,8 +10,8 @@
 
 
 ## Objetivos
-- Debe pedir si las palabras que se mostraran seran en ingles, español o aleatorio
-- Debe pedir si se quiere escoger alguna categoria especial o palabras aleatorias.
+- ✅ Debe pedir si las palabras que se mostraran seran en ingles, español o aleatorio
+- ✅ Debe pedir si se quiere escoger alguna categoria especial o palabras aleatorias.
 - Debe dar las opciones de elegir un reto o meta, es decir cierta cantidad de palabras que entregara.
 - Debe haber un conteo, promedio y operaciones matematicas que al finalizar el reto me permitan determinar cuantas hubo correctas y de una calificacion de que nivel de ingles tengo.
 - Segun las elecciones debe mostrarme una palabra aleatoria presente en el diccionario, sea ingles o español, y debo poder digitar la palabra en su traduccion, si la palabra es incorrecta vuelve a repetir o mostrar 
@@ -20,4 +20,14 @@
 - Debo poner por medio de teclas que me permita terminar terminar la ejecucion del programa, que me permita cambiar el idioma principal y que me permita cambiar la categoria en caso de desearlo.
 
 
+## Atajos
+- :q  salir
+- :l  cambiar idioma
+- :c  cambiar categoría
+- :r  repetir palabra
+- :s  ver estadísticas
+
+
+
 ## 🚀 About
+...
