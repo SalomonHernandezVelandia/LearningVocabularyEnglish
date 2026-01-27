@@ -35,3 +35,9 @@ msg9 = """
 """
 
 msg10 = "Para el listado de verbos irregulares, escoja si quiere que aparezcan todos los verbos de forma aleatoria o aparezca cada verbo en sus diferentes tiempos: "
+
+msg11 = """Digite la traduccion de la palabra teniendo en cuenta:
+- Si sale un número en Ingles para ponerlo en español solo ponga el numero en decimales y entre comilas ""
+- Palabras en Ingles repetidas tendran los siguientes caracteres extra para marcar un diferencia en los diccionarios: Infinitive = " (I)", Past Simple = " (PS)", Past Participle = " (PP)" 
+- Si quiere salir digite (Q)...
+"""

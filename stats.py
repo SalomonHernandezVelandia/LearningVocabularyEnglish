@@ -1,47 +1,24 @@
-def score_assignment(d, infinitive, past_simple, past_participle, irregulars_items, intento, extract_dict, palabra, digit_value, puntaje, correctas, errada):
-    if d == 1:
-        if infinitive == irregulars_items[0][1] and past_simple == irregulars_items[1][1] and past_participle == irregulars_items[2][1]:
-            if intento == 0:
-                puntaje+=1
-                correctas+=1
-            elif intento == 1:
-                puntaje+=0.5
-                correctas+=0
-            elif intento == 2:
-                puntaje+=0
-                correctas+=0
-            return True, puntaje, correctas, errada
-        else:
-            errada+=1
-            print(f"\nAlguna quedo incorrecta, REPITE¡¡¡......")    
-            return False, puntaje, correctas, errada
-    elif d == 2:
-        if extract_dict[palabra] == digit_value:
-            if intento == 0:
-                puntaje+=1
-                correctas+=1
-            elif intento == 1:
-                puntaje+=0.5
-                correctas+=0
-            elif intento == 2:
-                puntaje+=0
-                correctas+=0
-            return True, puntaje, correctas, errada
-        else:
-            errada+=1
-            return False, puntaje, correctas, errada
+def score_assignment(lst1, lst2, intento, pun, cor, err):
+    if lst1 == lst2:
+        if intento == 0:
+            pun+=1
+            cor+=1
+        elif intento == 1:
+            pun+=0.5
+            cor+=0
+        elif intento == 2:
+            pun+=0
+            cor+=0
+        return True, pun, cor, err
     else:
-        if extract_dict == digit_value:
-            if intento == 0:
-                puntaje+=1
-                correctas+=1
-            elif intento == 1:
-                puntaje+=0.5
-                correctas+=0
-            elif intento == 2:
-                puntaje+=0
-                correctas+=0
-            return True, puntaje, correctas, errada
-        else:
-            errada+=1
-            return False, puntaje, correctas, errada
+        err+=1
+        print(f"\nAlguna quedo incorrecta, REPITE¡¡¡......")    
+        return False, pun, cor, err
+    
+
+
+def results(pun, cor, err, sd2, d, sd):
+    print(f"Puntaje obtenido: {pun}")
+    print(f"Número de aciertos: {cor}")
+    print(f"Numero de errores: {err}")
+    print(f"\nTu puntuación final es de: {(cor/sd2)*100}% para el nivel {d[sd]}")
